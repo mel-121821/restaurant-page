@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/mel-121821/restaurant-page#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^5.6.3",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4"
   }
