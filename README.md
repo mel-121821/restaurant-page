@@ -31,6 +31,9 @@ Deployment Instructions
 [] Now let’s bundle our application into dist with your build command. For now, that’s npx webpack.
 
 [] Now there are a few more commands. Run each of these in order:
+git add dist -f && git commit -m "Deployment commit"
+git subtree push --prefix dist origin gh-pages
+git checkout main
 
 [] Recall that the source branch for GitHub Pages is set in your repository’s settings. Get this changed to the gh-pages branch. That should be everything!
 
