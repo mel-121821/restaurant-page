@@ -1,5 +1,164 @@
 /* ______CSS source file_______ */
 
+/* To do: make elements responsive */
+
+
+/*CSS Meyer Reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
 body {
-    background-color: rgba(0, 255, 255, 0.327);
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*__________________________________________*/
+
+
+:root {
+/* Color pallet pulled from banner image */
+/* CSS HSL */
+--barn-red: hsla(12, 70%, 25%, 1);
+--flame: hsla(17, 61%, 52%, 1);
+--maya-blue: hsla(202, 90%, 69%, 1);
+--bright-pink-crayola: hsla(345, 86%, 65%, 1);
+--champagne-pink: hsla(24, 90%, 92%, 1);
+--softened-black: rgba(0, 0, 0, 0.898);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    /*remove default margin/padding */
+    box-sizing: border-box;
+    /*change box-size to include padding and border */
+}
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: var(--champagne-pink);
+    display: grid;
+    grid-template-rows: 80px 50px 1fr 50px;
+    height: 100vh;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button {
+    padding: 5px 30px;
+    border-radius: 10px;
+    border: 4px solid var(--barn-red);
+    background: var(--flame);
+    color: var(--softened-black);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+.headliner {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    width: 350px;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+
+.intro {
+    display: flex;
+    width: 300px;
+    align-self: center;
+
+}
+
+.footer {
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--flame);
+    color: var(--softened-black);
+    border: 4px solid var(--barn-red);
 }
