@@ -11,7 +11,7 @@ Remember, you only need to install and configure the things you need for your pr
 
 [x] Inside of src/index.js write a console.log or alert statement and then run npx webpack serve. Open http://localhost:8080 in your browser and check your JavaScript is running.
 
-[] Inside div#content, create a homepage for your restaurant. You might want to include an image, headline, and some text about how wonderful the restaurant is; you do not have to make this look too fancy. It’s okay to hard-code these into the HTML for now just to see how they look on the page.
+[x] Inside div#content, create a homepage for your restaurant. You might want to include an image, headline, and some text about how wonderful the restaurant is; you do not have to make this look too fancy. It’s okay to hard-code these into the HTML for now just to see how they look on the page.
 
 [] Now remove everything inside div#content from the HTML (so you still have the header and nav with an empty div id="content" below it) and instead create them by using JavaScript only, e.g. by appending each new element to div#content once the page is first loaded. Since we’re all set up to write our code in multiple files, let’s write this initial page-load function inside of its own module and then import and call it inside of index.js.
 
@@ -55,6 +55,11 @@ Tools:
 Pull color palette from an image: https://coolors.co/image-picker
 
 
+VS Keyboard Shortcuts: 
+Use Ctrl + h to replace multiple words at once
+https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf
+
+
 __________________________________________________________
 
 Resources:
@@ -62,6 +67,6 @@ Resources:
 Change git repo directory location:
 https://stackoverflow.com/questions/11384928/change-git-repository-directory-location
 
-
-
+Fixing unintended body overflow: 
+https://css-tricks.com/findingfixing-unintended-body-overflow/
 
