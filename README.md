@@ -47,6 +47,14 @@ Name: banner-cupcake.jpg
 Creator: Blandine JOANNIC from Pixabay
 Url: https://pixabay.com/photos/cupcakes-chocolate-muffin-food-5116009/
 
+Name: bg.jpg
+Creator: Анастасия Белоусова from Pixabay
+Url: https://pixabay.com/photos/flour-bread-dough-bake-bakery-5290444/
+
+Name: bread-basket.jpg
+Creator: Dominic Alberts from Pixabay
+Url: https://pixabay.com/photos/baked-breads-basket-bread-basket-2313462/
+
 
 __________________________________________________________
 
