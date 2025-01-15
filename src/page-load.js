@@ -1,13 +1,12 @@
 //______Page Load Module__________
 
-// ___pseudo code_____
-// 1. Create a function to select the content div, assign it to a variable and return that variable 
-// 2. Create a function that builds each element, assign it a class, and return it 
-//   2a. One for headline
-//   2b. One for banner image (need to add js image functionality to config file)
-//   2c. One for intro text 
+// ___pseudo code_____ 
+// 1. Create a function that builds each element, assigns it content and a class, and returns it 
+//   1a. One for headline
+//   1b. One for banner image (need to add js image functionality to config file)
+//   1c. One for intro text 
 // 2. Create a function to append new elements to the content div
-//   
+// 3. Export to index.js  
 
 
 // use the following command in terminal to update project page:
@@ -42,8 +41,11 @@ function makeBanner () {
     
 function makeIntro () {
     const intro = document.createElement("div");
+    const introHeading = document.createElement("h2");
+    introHeading.textContent = "Secondary Slogan Here"
     const para = document.createElement("p");
     para.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    intro.appendChild(introHeading);
     intro.appendChild(para);
     intro.classList.add("intro");
     return intro
