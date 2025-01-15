@@ -79,6 +79,7 @@ table {
 --pale-dogwood: hsla(18, 31%, 75%, 1);
 --battleship-gray: hsla(0, 0%, 58%, 1);
 --french-gray: hsla(225, 3%, 73%, 1);
+--french-gray-translucent: hsla(225, 3%, 73%, 0.4);
 --tigers-eye: hsla(28, 70%, 42%, 1);
 }
 
@@ -149,12 +150,14 @@ header {
 
 button {
     padding: 5px 30px;
-    border-radius: 10px;
+    border-radius: 8px;
+    margin: 0px 5px;
     border: 2px solid var(--raw-umber);
     background: var(--pale-dogwood);
     color: var(--softened-black);
     font-size: 1.1rem;
     font-weight: 700;
+    box-shadow: 2px 2px 6px var(--battleship-gray);
 }
 
 /* _______________Content_______________ */
@@ -182,7 +185,6 @@ button {
     height: auto;
     margin-top: 10px;
     margin-bottom: 40px;
-    /* border: 1px solid var(--battleship-gray); */
     border-radius: 10px; 
     box-shadow: 2px 2px 6px var(--battleship-gray);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
@@ -191,9 +193,19 @@ button {
 
 .intro {
     display: flex;
+    flex-direction: column;
     width: 300px;
     align-self: center;
-    
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 6px var(--battleship-gray);
+}
+
+.intro h2 {
+    align-self: center;
+    margin-bottom: 20px;
+    font-weight: 700;
 }
 
 /* _______________Footer_______________ */
