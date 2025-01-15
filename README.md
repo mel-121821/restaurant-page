@@ -41,19 +41,35 @@ __________________________________________________________
 
 Images: 
 
+Bg Image:
+
+Name: bg.jpg
+Creator: Анастасия Белоусова from Pixabay
+Url: https://pixabay.com/photos/flour-bread-dough-bake-bakery-5290444/
+
+
 Banner Options: 
 
 Name: banner-cupcake.jpg
 Creator: Blandine JOANNIC from Pixabay
 Url: https://pixabay.com/photos/cupcakes-chocolate-muffin-food-5116009/
 
-Name: bg.jpg
-Creator: Анастасия Белоусова from Pixabay
-Url: https://pixabay.com/photos/flour-bread-dough-bake-bakery-5290444/
-
 Name: bread-basket.jpg
 Creator: Dominic Alberts from Pixabay
 Url: https://pixabay.com/photos/baked-breads-basket-bread-basket-2313462/
+
+Name: barista.jpg
+Creator: Quang Nguyen Vinh 
+Url: https://www.pexels.com/photo/woman-grinding-coffee-bean-2159129/
+
+
+Name: apple-pie.jpg
+Creator: Priscilla Du Preez 🇨🇦
+Url: https://unsplash.com/photos/brown-pie-on-white-ceramic-plate-2RXt6CQY_0c
+
+Name: apple-pie-2.jpg
+Creator: Priscilla Du Preez 🇨🇦
+Url: https://unsplash.com/photos/brown-pie-on-white-ceramic-plate-W8F9kM7F-5U
 
 
 __________________________________________________________
