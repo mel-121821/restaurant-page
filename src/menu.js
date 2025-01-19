@@ -6,7 +6,7 @@
 // http://localhost:8080/
 
 import pastries from "../img/heart-pastries.jpg"
-// import drinks from "../img/[].jpg"
+import drinks from "../img/coffee.jpg"
 import sandwich from "../img/sandwich.jpg"
 // import wraps from "../img/[].jpg"
 // import cakes from "../img/[].jpg"
@@ -27,7 +27,7 @@ function pastriesImg () {
     const img = document.createElement("img");
     img.src = pastries
     imgDiv.appendChild(img)
-    imgDiv.classList.add("banner")
+    imgDiv.classList.add("pastries");
     return imgDiv
 }
     
@@ -42,13 +42,34 @@ function pastriesInfo () {
     infoDiv.classList.add("intro");
     return infoDiv
 };
+
+function drinksImg () {
+    const imgDiv = document.createElement("div");
+    const img = document.createElement("img");
+    img.src = drinks
+    imgDiv.appendChild(img)
+    imgDiv.classList.add("drinks");
+    return imgDiv
+}
+    
+function drinksInfo () {
+    const infoDiv = document.createElement("div");
+    const itemHeading = document.createElement("h2");
+    itemHeading.textContent = "Drinks"
+    const para = document.createElement("p");
+    para.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    infoDiv.appendChild(itemHeading);
+    infoDiv.appendChild(para);
+    infoDiv.classList.add("intro");
+    return infoDiv
+};
     
 function sandwichImg () {
     const imgDiv = document.createElement("div");
     const img = document.createElement("img");
     img.src = sandwich
     imgDiv.appendChild(img)
-    imgDiv.classList.add("banner")
+    imgDiv.classList.add("sandwiches")
     return imgDiv
 }
     
@@ -64,11 +85,16 @@ function sandwichInfo () {
     return infoDiv
 };
 
+
+
 function menuLoad () {
     const content = document.querySelector('#content');
+    content.classList.add("menu-item")
     content.appendChild(makeHeadliner());
     content.appendChild(pastriesImg());
     content.appendChild(pastriesInfo());
+    content.appendChild(drinksImg());
+    content.appendChild(drinksInfo());
     content.appendChild(sandwichImg());
     content.appendChild(sandwichInfo());
 }
