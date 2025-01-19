@@ -101,15 +101,19 @@ html {
 body {
     background-color: white;
     display: grid;
-    grid-template-rows: 70px 50px 1fr 30px;
-    height: 100vh;
+    /* grid-template-rows: 70px 50px 1fr 30px; */
+    grid-template-rows: 70px 50px minmax(calc(100vh - 150px), 1fr) 30px;
+    /* note: minmax can only be used with grid --> used the calc fn to set min value to viewport size - title/header/footer and max value to 1fr*/
+    /* height: 100vh; <-- this was causing the bg image to be cut off, as the body height was only the size of the viewport*/
     position: relative;
 }
 
 body::before {
     content: "";
     background-image: url('../img/bg.jpg');
-    background-size: cover;
+    background-size: 100vw auto;
+    
+    background-repeat: repeat-y;
     position: absolute;
     top: 0px;
     right: 0px;
@@ -118,11 +122,9 @@ body::before {
     opacity: 0.3;
 } 
 
-h1,
-nav button,
-.headliner,
-.banner,
-.intro,
+.title,
+button,
+#content,
 .footer {
     position: relative;
 }
@@ -160,11 +162,12 @@ button {
     box-shadow: 2px 2px 6px var(--battleship-gray);
 }
 
-/* _______________Content_______________ */
+/* _______________Content (General)_______________ */
 
 #content {
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
 
 .headliner {
@@ -174,7 +177,10 @@ button {
     justify-content: center;
 }
 
-.banner {
+.banner,
+.pastries,
+.drinks,
+.sandwiches {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -208,6 +214,28 @@ button {
     font-weight: 700;
 }
 
+/* _______________Content (Menu)_______________ */
+
+.menu-item img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-radius: 50%; 
+    /* border: 2px solid var(--kobicha); */
+    box-shadow: 0px 6px 12px 3px var(--battleship-gray);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+}
+
+.pastries > img {
+    border: 2px solid var(--french-gray);
+}
+
+.drinks > img {
+    border: 2px solid var(--raw-umber);
+}
+
 /* _______________Footer_______________ */
 
 .footer {
@@ -219,4 +247,5 @@ button {
     background: var(--pale-dogwood);
     color: var(--softened-black);
     border: 2px solid var(--raw-umber);
+    /* margin-top: 30px; */
 }
