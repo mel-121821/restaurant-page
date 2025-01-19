@@ -53,5 +53,7 @@ menuBtn.addEventListener("click", function () {
 });
 
 function clearContent () {
-    document.getElementById("content").innerHTML = "";
+    const content = document.getElementById("content")
+    content.innerHTML = "";
+    content.className = "";
 }
