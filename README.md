@@ -48,7 +48,7 @@ Creator: Анастасия Белоусова from Pixabay
 Url: https://pixabay.com/photos/flour-bread-dough-bake-bakery-5290444/
 
 
-Banner Options: 
+Banner Options Home/About Pages: 
 
 Name: banner-cupcake.jpg
 Creator: Blandine JOANNIC from Pixabay
@@ -62,7 +62,6 @@ Name: barista.jpg
 Creator: Quang Nguyen Vinh 
 Url: https://www.pexels.com/photo/woman-grinding-coffee-bean-2159129/
 
-
 Name: apple-pie.jpg
 Creator: Priscilla Du Preez 🇨🇦
 Url: https://unsplash.com/photos/brown-pie-on-white-ceramic-plate-2RXt6CQY_0c
@@ -70,6 +69,52 @@ Url: https://unsplash.com/photos/brown-pie-on-white-ceramic-plate-2RXt6CQY_0c
 Name: apple-pie-2.jpg
 Creator: Priscilla Du Preez 🇨🇦
 Url: https://unsplash.com/photos/brown-pie-on-white-ceramic-plate-W8F9kM7F-5U
+
+
+Menu Images: Pastries
+
+Name: heart-pastries.jpg
+Creator: Tikovka1355 from Pixabay
+Url: https://pixabay.com/photos/cookies-food-snack-breakfast-baked-5711139/
+
+
+Menu Images: Drinks
+
+Name: coffee
+Creator: Not Named
+URl: https://pixabay.com/photos/coffee-cup-caffeine-espresso-4618705/
+
+
+Menu Images: Sandwiches
+
+Name: sandwich.jpg
+Creator: Álvaro Bernal
+Url: https://unsplash.com/photos/bread-on-brown-round-plate-7I7h0T48eLQ
+
+Name: sandwich2.jpg
+Creator: Deepthi Clicks on Unsplash
+Url: https://unsplash.com/photos/a-sandwich-with-meat-cheese-tomatoes-and-lettuce-xhCpU7ja5EQ
+
+
+Menu Images: Wraps
+
+Name:
+Creator:
+URl: 
+
+
+Menu Images: Cakes
+
+Name:
+Creator:
+URl: 
+
+
+Menu Images: Catering
+
+Name:
+Creator:
+URl: 
 
 
 __________________________________________________________
