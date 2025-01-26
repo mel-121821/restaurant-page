@@ -77,12 +77,27 @@ Name: heart-pastries.jpg
 Creator: Tikovka1355 from Pixabay
 Url: https://pixabay.com/photos/cookies-food-snack-breakfast-baked-5711139/
 
+Name: donuts.jpg
+Creator: Jana from Pixabay
+Url: https://pixabay.com/photos/donut-pastry-sweet-sugar-box-5331966/
 
-Menu Images: Drinks
+Name: donuts4.jpg
+Creator: Nik (helloimnik) from Unsplash
+Url: https://unsplash.com/photos/baked-doughnuts-with-sprinklers-YpsnJ6eGjVs 
+
+
+Menu Images: Hot Drinks
 
 Name: coffee
 Creator: Not Named
 URl: https://pixabay.com/photos/coffee-cup-caffeine-espresso-4618705/
+
+
+Menu Images: Cold Drinks
+
+Name: smoothe.jpg
+Creator: AS Photograpy from Pixabay
+URl: https://pixabay.com/photos/strawberry-smoothie-kefir-drink-cup-1418212/
 
 
 Menu Images: Sandwiches
@@ -95,12 +110,6 @@ Name: sandwich2.jpg
 Creator: Deepthi Clicks on Unsplash
 Url: https://unsplash.com/photos/a-sandwich-with-meat-cheese-tomatoes-and-lettuce-xhCpU7ja5EQ
 
-
-Menu Images: Wraps
-
-Name:
-Creator:
-URl: 
 
 
 Menu Images: Cakes
@@ -139,3 +148,17 @@ https://stackoverflow.com/questions/11384928/change-git-repository-directory-loc
 Fixing unintended body overflow: 
 https://css-tricks.com/findingfixing-unintended-body-overflow/
 
+Clear content of a Div:
+https://www.geeksforgeeks.org/how-to-clear-the-content-of-a-div-using-javascript/
+
+Minmax fn info:
+https://developer.mozilla.org/en-US/docs/Web/CSS/minmax
+
+Calc fn info:
+https://developer.mozilla.org/en-US/docs/Web/CSS/calc
+
+Scale and Crop Images with CSS Object Fit: 
+https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
+
+Append Multiple elements using append():
+https://dev.to/dcodeyt/append-multiple-elements-using-append-302h#:~:text=on%20Parent%20Nodes-,append(),nodes%20to%20a%20parent%20node.&text=As%20you%20can%20see%2C%20you,append%20everything%20to%20the%20parent.
