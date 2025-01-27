@@ -99,7 +99,7 @@ html {
 /* _______________Main_______________ */
 
 body {
-    background-color: white;
+    background-color: var(--platinum);
     display: grid;
     /* grid-template-rows: 70px 50px 1fr 30px; */
     grid-template-rows: 70px 50px minmax(calc(100vh - 150px), 1fr) 30px;
@@ -119,7 +119,7 @@ body::before {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.3;
+    opacity: 0.2;
 } 
 
 .title,
@@ -178,9 +178,8 @@ button {
 }
 
 .banner,
-.pastries,
-.drinks,
-.sandwiches {
+.menu-item div
+ {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -200,7 +199,7 @@ button {
 .intro {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 450px;
     align-self: center;
     padding: 20px;
     border-radius: 5px;
@@ -210,30 +209,51 @@ button {
 
 .intro h2 {
     align-self: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     font-weight: 700;
 }
 
 /* _______________Content (Menu)_______________ */
 
 .menu-item img {
-    width: 350px;
-    height: 350px;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     margin-top: 40px;
     margin-bottom: 40px;
     border-radius: 50%; 
+    border: 30px solid rgb(255, 255, 255, 0.8);
     /* border: 2px solid var(--kobicha); */
-    box-shadow: 0px 6px 12px 3px var(--battleship-gray);
+    box-shadow: 0px 1px 10px 1px var(--battleship-gray);
     /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
 
 .pastries > img {
-    border: 2px solid var(--french-gray);
+    object-fit: cover;
+    /* object-position: 70% 50%; */
 }
 
-.drinks > img {
-    border: 2px solid var(--raw-umber);
+.hot-drinks > img {
+    object-position: 70% 0%;
+}
+
+.cold-drinks > img {
+    object-position: 70% 0%;
+}
+
+.sandwiches > img {
+    object-position: 50% 70%;
+}
+
+.menu-item h3,
+.menu-item p {
+    /* align-self: center; 
+    text-align works better here, otherwise overflow text will be aligned to the left side of div*/
+    text-align: center;
+}
+
+.menu-item h3 {
+    margin-top: 20px;
 }
 
 /* _______________Footer_______________ */
