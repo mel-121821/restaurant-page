@@ -39,28 +39,28 @@ function makeBanner () {
     return banner
 }
     
-function makeIntro () {
-    const intro = document.createElement("div");
-    const introHeading = document.createElement("h2");
-    introHeading.textContent = "Secondary Slogan Here"
+function makeInfo () {
+    const info = document.createElement("div");
+    const infoHeading = document.createElement("h2");
+    infoHeading.textContent = "Secondary Slogan Here"
     const para = document.createElement("p");
     para.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-    intro.appendChild(introHeading);
-    intro.appendChild(para);
-    intro.classList.add("intro");
-    return intro
+    info.appendChild(infoHeading);
+    info.appendChild(para);
+    info.classList.add("info");
+    return info
 };
 
 function pageLoad () {
     const content = document.querySelector('#content');
     content.appendChild(makeHeadliner());
     content.appendChild(makeBanner());
-    content.appendChild(makeIntro());
+    content.appendChild(makeInfo());
 }
 
     // makeHeadliner();
     // makeBanner();
-    // makeIntro();
+    // makeInfo();
 
 
 
