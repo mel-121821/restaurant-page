@@ -33,15 +33,36 @@ function makeAbout () {
     para.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     about.appendChild(aboutHeading);
     about.appendChild(para);
-    about.classList.add("intro");
+    about.classList.add("info");
     return about
 };
 
+function makeContact () {
+    const contact = document.createElement("div")
+    const contactHeading = document.createElement("h2");
+    contactHeading.textContent = "Contact Us!"
+    const p1 = document.createElement("p");
+    p1.textContent = "Want to place an order? Email us at:"
+    const email = document.createElement("p");
+    email.textContent = "info@mybakery.ca" 
+    const p2 = document.createElement("p");
+    p2.textContent = "Or give us a call:"
+    const phone = document.createElement("p");
+    phone.textContent = "(888)-123-456" 
+
+    contact.appendChild(contactHeading);
+    contact.append(p1, email, p2, phone);
+    contact.classList.add("info");
+    return contact
+}
+
 function aboutLoad () {
     const content = document.querySelector('#content');
+    content.classList.add("about");
     content.appendChild(makeHeadliner());
     content.appendChild(makeBanner());
     content.appendChild(makeAbout());
+    content.appendChild(makeContact());
 }
 
 
