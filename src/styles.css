@@ -196,7 +196,7 @@ button {
 
 }
 
-.intro {
+.info {
     display: flex;
     flex-direction: column;
     width: 450px;
@@ -205,27 +205,74 @@ button {
     border-radius: 5px;
     background-color: rgb(255, 255, 255, 0.8);
     box-shadow: 2px 2px 6px var(--battleship-gray);
+    margin-bottom: 30px;
 }
 
-.intro h2 {
+.info h2 {
     align-self: center;
-    /* margin-bottom: 20px; */
+    margin-bottom: 10px;
     font-weight: 700;
+    font-size: 1.4rem;
+}
+
+/* _______________Content (About)_______________ */
+
+.about div:nth-child(4) {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.about div:nth-child(4) h2 {
+    margin-bottom: 18px;
+}
+
+.about div:nth-child(4) p {
+    text-align: center;
+    margin-bottom: 7px;
+}
+
+.about div:nth-child(4) p:nth-child(2n + 3) {
+    font-weight: 600;
+}
+
+.about div:nth-child(4) p:nth-child(3) {
+    margin-bottom: 20px;
 }
 
 /* _______________Content (Menu)_______________ */
 
-.menu-item img {
-    width: 400px;
-    height: 400px;
+.menu-item h2 {
+    margin-bottom: 0px;
+}
+
+#content img {
+    width: 550px;
+    height: 500px;
     object-fit: cover;
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 40px;
+
+    /* Rounded style */
     border-radius: 50%; 
-    border: 30px solid rgb(255, 255, 255, 0.8);
-    /* border: 2px solid var(--kobicha); */
-    box-shadow: 0px 1px 10px 1px var(--battleship-gray);
+
+    /* Square img style */
+    /* border-radius: 0; */
+
+    /* Border img style */
+    border: 30px solid rgb(255, 255, 255, 0.8); 
+    /* border-radius: 10px; */
+    box-shadow: 2px 2px 6px var(--battleship-gray);
+
+    /* Outline img style */
+    /* outline: 30px solid rgb(255, 255, 255, 0.8);
+    border: 1px solid var(--platinum);
+    box-shadow: 10px 10px 12px 10px var(--battleship-gray); */
+    
     /* offset-x | offset-y | blur-radius | spread-radius | color */
+    
+    /* current info div box-shadow: 
+    box-shadow: 2px 2px 6px var(--battleship-gray); */
 }
 
 .pastries > img {
@@ -233,7 +280,8 @@ button {
     /* object-position: 70% 50%; */
 }
 
-.hot-drinks > img {
+.menu-item div:nth-child(4) > img {
+    /* hot drinks image */
     object-position: 70% 0%;
 }
 
@@ -245,11 +293,36 @@ button {
     object-position: 50% 70%;
 }
 
+
+
+.menu-item div:nth-child(10) > img {
+    /* desserts image */
+    object-fit: cover;
+    object-position: 60% 0%;
+}
+
 .menu-item h3,
 .menu-item p {
     /* align-self: center; 
     text-align works better here, otherwise overflow text will be aligned to the left side of div*/
     text-align: center;
+}
+
+.menu-item h3 {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.menu-item p {
+    margin-top: 8px;
+}
+
+.menu-item > div:nth-child(9) > p:nth-child(11) {
+    /* (info div for sandwitches - sides paragraph) */
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-top: 20px;
 }
 
 .menu-item h3 {
