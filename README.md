@@ -39,6 +39,7 @@ git checkout main
 
 __________________________________________________________
 
+
 Images: 
 
 Bg Image:
@@ -48,11 +49,8 @@ Creator: Анастасия Белоусова from Pixabay
 Url: https://pixabay.com/photos/flour-bread-dough-bake-bakery-5290444/
 
 
-Banner Options Home/About Pages: 
 
-Name: banner-cupcake.jpg
-Creator: Blandine JOANNIC from Pixabay
-Url: https://pixabay.com/photos/cupcakes-chocolate-muffin-food-5116009/
+Banner Options Home/About Pages: 
 
 Name: bread-basket.jpg
 Creator: Dominic Alberts from Pixabay
@@ -62,28 +60,14 @@ Name: barista.jpg
 Creator: Quang Nguyen Vinh 
 Url: https://www.pexels.com/photo/woman-grinding-coffee-bean-2159129/
 
-Name: apple-pie.jpg
-Creator: Priscilla Du Preez 🇨🇦
-Url: https://unsplash.com/photos/brown-pie-on-white-ceramic-plate-2RXt6CQY_0c
-
-Name: apple-pie-2.jpg
-Creator: Priscilla Du Preez 🇨🇦
-Url: https://unsplash.com/photos/brown-pie-on-white-ceramic-plate-W8F9kM7F-5U
 
 
 Menu Images: Pastries
 
-Name: heart-pastries.jpg
-Creator: Tikovka1355 from Pixabay
-Url: https://pixabay.com/photos/cookies-food-snack-breakfast-baked-5711139/
-
-Name: donuts.jpg
-Creator: Jana from Pixabay
-Url: https://pixabay.com/photos/donut-pastry-sweet-sugar-box-5331966/
-
 Name: donuts4.jpg
 Creator: Nik (helloimnik) from Unsplash
 Url: https://unsplash.com/photos/baked-doughnuts-with-sprinklers-YpsnJ6eGjVs 
+
 
 
 Menu Images: Hot Drinks
@@ -93,11 +77,13 @@ Creator: Not Named
 URl: https://pixabay.com/photos/coffee-cup-caffeine-espresso-4618705/
 
 
+
 Menu Images: Cold Drinks
 
-Name: smoothe.jpg
+Name: smoothie.jpg
 Creator: AS Photograpy from Pixabay
 URl: https://pixabay.com/photos/strawberry-smoothie-kefir-drink-cup-1418212/
+
 
 
 Menu Images: Sandwiches
@@ -114,12 +100,17 @@ Url: https://unsplash.com/photos/a-sandwich-with-meat-cheese-tomatoes-and-lettuc
 
 Menu Images: Cakes
 
-Name:
-Creator:
-URl: 
+Name: cake.jpg
+Creator: Leeloo The First on Pexels
+URl: https://www.pexels.com/photo/sliced-carrot-cake-on-a-white-plate-5594495/
+
 
 
 Menu Images: Catering
+
+Name: cupcake.jpg
+Creator: Blandine JOANNIC from Pixabay
+Url: https://pixabay.com/photos/cupcakes-chocolate-muffin-food-5116009/
 
 Name:
 Creator:
@@ -162,3 +153,6 @@ https://www.digitalocean.com/community/tutorials/css-cropping-images-object-fit
 
 Append Multiple elements using append():
 https://dev.to/dcodeyt/append-multiple-elements-using-append-302h#:~:text=on%20Parent%20Nodes-,append(),nodes%20to%20a%20parent%20node.&text=As%20you%20can%20see%2C%20you,append%20everything%20to%20the%20parent.
+
+Useful Accessibility tip for high-contrast users:
+https://stackoverflow.com/questions/52589391/css-box-shadow-vs-outline
