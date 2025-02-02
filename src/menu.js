@@ -9,8 +9,8 @@ import pastries from "../img/donuts4.jpg"
 import hotDrinks from "../img/coffee.jpg"
 import coldDrinks from "../img/smoothie.jpg"
 import sandwich from "../img/sandwich.jpg"
-// import desserts from "../img/[].jpg"
-// import catering from "../img/[].jpg"
+import desserts from "../img/cake2.jpg"
+import catering from "../img/cupcake.jpg"
 
 
 function makeHeadliner () {
@@ -37,29 +37,29 @@ function pastriesImg () {
     
 function pastriesInfo () {
     const infoDiv = document.createElement("div");
-    const itemHeading = document.createElement("h2");
-    itemHeading.textContent = "Pastries"
+    const itemType = document.createElement("h2");
+    itemType.textContent = "Pastries"
 
      // Sweet Treats
-    const itemCategory1 = document.createElement("h3");
-    itemCategory1.textContent = "Sweet Treats"
+    const item1 = document.createElement("h3");
+    item1.textContent = "Sweet Treats"
     const p1 = document.createElement("p")
     p1.textContent = "Donuts | Cookies | Scones | Muffins | Tarts"
-    const p1Prices = document.createElement("p");
-    p1Prices.textContent = "$1.75 E. | $1.25 E. | $2.75 E. | $2.00 E. | $2.25 E."
+    const p1Amt = document.createElement("p");
+    p1Amt.textContent = "$1.75 E. | $1.25 E. | $2.75 E. | $2.00 E. | $2.25 E."
     
     // Savory Snacks
-    const itemCategory2 = document.createElement("h3");
-    itemCategory2.textContent = "Savoury Snacks"
+    const item2 = document.createElement("h3");
+    item2.textContent = "Savoury Snacks"
     const p2 = document.createElement("p")
     p2.textContent = "Croissants | Bagels | Tea Biscuts | Twists"
-    const p2Prices = document.createElement("p");
-    p2Prices.textContent = "$1.75 E. | $1.50 E. | $1.75 E. | $1.25 E."
+    const p2Amt = document.createElement("p");
+    p2Amt.textContent = "$1.75 E. | $1.50 E. | $1.75 E. | $1.25 E."
     
     // Append Content
-    infoDiv.appendChild(itemHeading);
-    infoDiv.append(itemCategory1, p1, p1Prices, itemCategory2, p2, p2Prices);
-    infoDiv.classList.add("intro");
+    infoDiv.appendChild(itemType);
+    infoDiv.append(item1, p1, p1Amt, item2, p2, p2Amt);
+    infoDiv.classList.add("info");
     return infoDiv
 };
 
@@ -76,8 +76,8 @@ function hotDrinksImg () {
     
 function hotDrinksInfo () {
     const infoDiv = document.createElement("div");
-    const itemHeading = document.createElement("h2");
-    itemHeading.textContent = "Hot Drinks"
+    const itemType = document.createElement("h2");
+    itemType.textContent = "Hot Drinks"
 
     // Coffees
     const item1 = document.createElement("h3");
@@ -120,9 +120,9 @@ function hotDrinksInfo () {
     p5Size.textContent = "S - $3.75 | M - $4.50 | L - $5.25";
 
     // Append Content
-    infoDiv.appendChild(itemHeading);
+    infoDiv.appendChild(itemType);
     infoDiv.append(item1, p1, p1Size, item2, p2, p2Size, item3, p3, p3Size, item4, p4, p4Size, item5, p5, p5Size);
-    infoDiv.classList.add("intro");
+    infoDiv.classList.add("info");
     return infoDiv
 };
 
@@ -139,8 +139,8 @@ function coldDrinksImg () {
 
 function coldDrinksInfo () {
     const infoDiv = document.createElement("div");
-    const itemHeading = document.createElement("h2");
-    itemHeading.textContent = "Cold Drinks"
+    const itemType = document.createElement("h2");
+    itemType.textContent = "Cold Drinks"
 
     // Cold Drinks
     const item1 = document.createElement("h3");
@@ -159,9 +159,9 @@ function coldDrinksInfo () {
     p2Size.textContent = "S - $4.75 | M - $5.50 | L - $6.25";
 
     // Append Content
-    infoDiv.appendChild(itemHeading);
+    infoDiv.appendChild(itemType);
     infoDiv.append(item1, p1, p1Size, item2, p2, p2Size);
-    infoDiv.classList.add("intro");
+    infoDiv.classList.add("info");
     return infoDiv
 }
 
@@ -178,72 +178,125 @@ function sandwichImg () {
     
 function sandwichInfo () {
     const infoDiv = document.createElement("div");
-    const itemHeading = document.createElement("h2");
-    itemHeading.textContent = "Sandwiches"
+    const itemType = document.createElement("h2");
+    itemType.textContent = "Sandwiches"
 
      // Homestyle
-    const itemCategory1 = document.createElement("h3");
-    itemCategory1.textContent = "Homestyle"
+    const item1 = document.createElement("h3");
+    item1.textContent = "Homestyle"
     const p1 = document.createElement("p")
     p1.textContent = "Turkey Club | BLT | Egg Salad | Ham & Cheese | Roast Beef"
-    const p1Prices = document.createElement("p");
-    p1Prices.textContent = "Single: $8.50 | Combo: $10.50" 
+    const p1Amt = document.createElement("p");
+    p1Amt.textContent = "Half Sandwich: $5.50 | Half Combo**: $8.50 | Full Sandwich: 7.50 | Full Combo**: $10.50" 
 
-     // Artisanal
-     const itemCategory2 = document.createElement("h3");
-     itemCategory2.textContent = "Artisanal"
-     const p2 = document.createElement("p")
-     p2.textContent = "Avocado Chicken | Veggie Delight | Steak and Cheese | Buffalo Chicken Ranch"
-     const p2Prices = document.createElement("p");
-     p2Prices.textContent = "Single: $10.50 | Combo: $12.50" 
+    // Artisanal
+    const item2 = document.createElement("h3");
+    item2.textContent = "Artisanal"
+    const p2 = document.createElement("p")
+    p2.textContent = "Avocado Chicken | Veggie Delight | Steak and Cheese | Buffalo Chicken Ranch"
+    const p2Amt = document.createElement("p");
+    p2Amt.textContent = "Half Sandwich: $6.50 | Half Combo**: $9.50 | Full Sandwich: 9.50 | Full Combo**: $12.50" 
     
     // Wraps
-    const itemCategory3 = document.createElement("h3");
-    itemCategory3.textContent = "Wraps"
+    const item3 = document.createElement("h3");
+    item3.textContent = "Wraps"
     const p3 = document.createElement("p")
-    p3.textContent = "Vanilla | Chocolate | Red Velvet | Lemon | Carrot"
-    const p3Prices = document.createElement("p");
-    p3Prices.textContent = 'Slice: $2.50 | Log: $7.50  | 9" Round: 9.25 | 16x22" Slab: $25.50'
+    p3.textContent = "Chicken Caesar | Farmer's Breakfast | Any sandwich option"
+    const p3Amt = document.createElement("p");
+    p3Amt.textContent = "Half Wrap: $5.00 | Half Combo**: $8.00 | Full Wrap: $7.00 | Full Combo**: $10.00" 
+
+    // Side Options
+    const sides = document.createElement("p");
+    sides.textContent = "**Any combo item comes with your choice of Caesar salad, garden salad, fresh cut fries or sweet potato fries**"
     
     // Append Content
-    infoDiv.appendChild(itemHeading);
-    infoDiv.append(itemCategory1, p1, p1Prices, itemCategory2, p2, p2Prices);
-    infoDiv.classList.add("intro");
+    infoDiv.appendChild(itemType);
+    infoDiv.append(item1, p1, p1Amt, item2, p2, p2Amt, item3, p3, p3Amt, sides);
+    infoDiv.classList.add("info");
     return infoDiv
 };
 
 //_______________Desserts___________________
 
+function dessertsImg () {
+    const imgDiv = document.createElement("div");
+    const img = document.createElement("img");
+    img.src = desserts
+    imgDiv.appendChild(img)
+    return imgDiv
+}
+
 function dessertsInfo () {
     const infoDiv = document.createElement("div");
-    const itemHeading = document.createElement("h2");
-    itemHeading.textContent = "Desserts"
+    const itemType = document.createElement("h2");
+    itemType.textContent = "Desserts"
 
      // Pies
-    const itemCategory1 = document.createElement("h3");
-    itemCategory1.textContent = "Pies"
+    const item1 = document.createElement("h3");
+    item1.textContent = "Pie"
     const p1 = document.createElement("p")
     p1.textContent = "Apple | Pecan | Cherry | Blueberry | Peach"
-    const p1Prices = document.createElement("p");
-    p1Prices.textContent = "Slice: $3.50 | Mini: $5.50  | Full Size: 9.25"
+    const p1Amt = document.createElement("p");
+    p1Amt.textContent = "Slice: $3.50 | Mini: $5.50  | Full Size: 9.25"
     
-    // Cakes
-    const itemCategory2 = document.createElement("h3");
-    itemCategory2.textContent = "Cakes"
+    // Cupakes
+    const item2 = document.createElement("h3");
+    item2.textContent = "Cake"
     const p2 = document.createElement("p")
     p2.textContent = "Vanilla | Chocolate | Red Velvet | Lemon | Carrot"
-    const p2Prices = document.createElement("p");
-    p2Prices.textContent = 'Slice: $2.50 | Log: $7.50  | 9" Round: 9.25 | 16x22" Slab: $25.50'
+    const p2Amt = document.createElement("p");
+    p2Amt.textContent = 'Slice: $2.50 | Log: $7.50  | 9" Round: 9.25 | 16x22" Slab: $25.50'
+
+    const item3 = document.createElement("h3");
+    item3.textContent = "Cupcakes"
+    const p3 = document.createElement("p")
+    p3.textContent = "Strawberry Cream | Oreo | Caramel | Any cake flavour"
+    const p3Amt = document.createElement("p");
+    p3Amt.textContent = "Single Cupcake: $2.50 | 1/2 Dozen: $12.50 | Dozen: $24.00"
+
+    // Cheesecakes
+    const item4 = document.createElement("h3");
+    item4.textContent = "Cheesecake"
+    const p4 = document.createElement("p")
+    p4.textContent = "New York Style | Key Lime | Cherry | Caramel | Peach"
+    const p4Amt = document.createElement("p");
+    p4Amt.textContent = "Slice: $4.50 | Mini: $6.50  | Full Size: 10.25"
     
     // Append Content
-    infoDiv.appendChild(itemHeading);
-    infoDiv.append(itemCategory1, p1, p1Prices, itemCategory2, p2, p2Prices);
-    infoDiv.classList.add("intro");
+    infoDiv.appendChild(itemType);
+    infoDiv.append(item1, p1, p1Amt, item2, p2, p2Amt, item3, p3, p3Amt, item4, p4, p4Amt);
+    infoDiv.classList.add("info");
     return infoDiv
 };
 
  //_______________Catering??___________________
 
+ function cateringImg () {
+    const imgDiv = document.createElement("div");
+    const img = document.createElement("img");
+    img.src = catering
+    imgDiv.appendChild(img)
+    return imgDiv
+}
+
+function cateringInfo () {
+    const contact = document.createElement("div")
+    const contactHeading = document.createElement("h2");
+    contactHeading.textContent = "Planning an Event?"
+    const p1 = document.createElement("p");
+    p1.textContent = "MyBakery provides catering services for weddings, social gatherings and corporate events. To submit an order, email us at:"
+    const email = document.createElement("p");
+    email.textContent = "info@mybakery.ca" 
+    const p2 = document.createElement("p");
+    p2.textContent = "Or give us a call:"
+    const phone = document.createElement("p");
+    phone.textContent = "(888)-123-456" 
+
+    contact.appendChild(contactHeading);
+    contact.append(p1, email, p2, phone);
+    contact.classList.add("info");
+    return contact
+}
 
 //_______________Content Display___________________
 
@@ -259,6 +312,10 @@ function menuLoad () {
     content.appendChild(coldDrinksInfo());
     content.appendChild(sandwichImg());
     content.appendChild(sandwichInfo());
+    content.appendChild(dessertsImg());
+    content.appendChild(dessertsInfo());
+    content.appendChild(cateringImg());
+    content.appendChild(cateringInfo());
 }
 
 
