@@ -91,6 +91,14 @@ table {
     /*change box-size to include padding and border */
 }
 
+@font-face {
+    font-family: dancing-script;
+    src:url('../font/dancing-script/DancingScript-Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+}
+
 html {
     font-size: 16px;
     font-family: sans-serif;
@@ -102,7 +110,7 @@ body {
     background-color: var(--platinum);
     display: grid;
     /* grid-template-rows: 70px 50px 1fr 30px; */
-    grid-template-rows: 70px 50px minmax(calc(100vh - 150px), 1fr) 30px;
+    grid-template-rows: 100px 50px minmax(calc(100vh - 150px), 1fr) 30px;
     /* note: minmax can only be used with grid --> used the calc fn to set min value to viewport size - title/header/footer and max value to 1fr*/
     /* height: 100vh; <-- this was causing the bg image to be cut off, as the body height was only the size of the viewport*/
     position: relative;
@@ -135,10 +143,11 @@ button,
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'dancing-script';
 }
 
 h1 {
-    font-size: 1.4rem;
+    font-size: 4rem;
     font-weight: 700;
 }
 
@@ -185,15 +194,38 @@ button {
     justify-content: center;
 }
 
+img {
+    object-fit: cover;
+    margin-bottom: 40px;  
+
+     /* Rounded style */
+    border-radius: 50%; 
+
+    /* Square img style */
+    /* border-radius: 0; */
+
+    /* Border img style */
+    border: 30px solid rgb(255, 255, 255, 0.8); 
+    /* border-radius: 10px; */
+    box-shadow: 2px 2px 6px var(--battleship-gray);
+
+    /* Outline img style */
+    /* outline: 30px solid rgb(255, 255, 255, 0.8);
+    border: 1px solid var(--platinum);
+    box-shadow: 10px 10px 12px 10px var(--battleship-gray); */
+    
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    
+    /* current info div box-shadow: 
+    box-shadow: 2px 2px 6px var(--battleship-gray); */
+}
+
 .banner img {
-    width: 350px;
+    width: 500px;
     height: auto;
     margin-top: 10px;
-    margin-bottom: 40px;
-    border-radius: 10px; 
-    box-shadow: 2px 2px 6px var(--battleship-gray);
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-
+    border: 20px solid rgb(255, 255, 255, 0.8);
+    border-radius: 40px
 }
 
 .info {
@@ -218,26 +250,29 @@ button {
 /* _______________Content (About)_______________ */
 
 .about div:nth-child(4) {
+    /* Contact Info div */
     margin-top: 50px;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .about div:nth-child(4) h2 {
+    /* Contact info header */
     margin-bottom: 18px;
 }
 
 .about div:nth-child(4) p {
-    text-align: center;
+    /* Contact info - all paragraphs */
     margin-bottom: 7px;
 }
 
-.about div:nth-child(4) p:nth-child(2n + 3) {
-    font-weight: 600;
+.about div:nth-child(4) p:nth-child(3) {
+    /* Contact info - email paragraph */
+    margin-bottom: 20px;
 }
 
-.about div:nth-child(4) p:nth-child(3) {
-    margin-bottom: 20px;
+.about div:nth-child(4) p:nth-child(2n + 3) {
+    /* Contact info - bolded paragraphs */
+    font-weight: 600;
 }
 
 /* _______________Content (Menu)_______________ */
@@ -246,59 +281,33 @@ button {
     margin-bottom: 0px;
 }
 
-#content img {
+.menu-item img {
     width: 550px;
-    height: 500px;
-    object-fit: cover;
-    margin-top: 30px;
-    margin-bottom: 40px;
-
-    /* Rounded style */
-    border-radius: 50%; 
-
-    /* Square img style */
-    /* border-radius: 0; */
-
-    /* Border img style */
-    border: 30px solid rgb(255, 255, 255, 0.8); 
-    /* border-radius: 10px; */
-    box-shadow: 2px 2px 6px var(--battleship-gray);
-
-    /* Outline img style */
-    /* outline: 30px solid rgb(255, 255, 255, 0.8);
-    border: 1px solid var(--platinum);
-    box-shadow: 10px 10px 12px 10px var(--battleship-gray); */
-    
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    
-    /* current info div box-shadow: 
-    box-shadow: 2px 2px 6px var(--battleship-gray); */
+    height: 430px;
+    margin-top: 30px;  
 }
 
-.pastries > img {
-    object-fit: cover;
-    /* object-position: 70% 50%; */
-}
+/* _______________Menu Image Positioning_______________ */
 
-.menu-item div:nth-child(4) > img {
-    /* hot drinks image */
+.menu-item div:nth-child(4) > img,
+.menu-item div:nth-child(6) > img  {
+    /* hot drinks and cold drinks images*/
     object-position: 70% 0%;
 }
 
-.cold-drinks > img {
-    object-position: 70% 0%;
-}
-
-.sandwiches > img {
+.menu-item div:nth-child(8) > img {
+    /* sandwich img */
     object-position: 50% 70%;
 }
 
-
-
 .menu-item div:nth-child(10) > img {
     /* desserts image */
-    object-fit: cover;
     object-position: 60% 0%;
+}
+
+.menu-item > div:nth-child(12) > img {
+    /* catering img */
+    object-position: 100% 0%;
 }
 
 .menu-item h3,
