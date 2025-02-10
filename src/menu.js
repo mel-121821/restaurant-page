@@ -10,7 +10,7 @@ import hotDrinks from "../img/coffee.jpg"
 import coldDrinks from "../img/smoothie.jpg"
 import sandwich from "../img/sandwich.jpg"
 import desserts from "../img/cake2.jpg"
-import catering from "../img/cupcake.jpg"
+import catering from "../img/mini-sandwiches.jpg"
 
 
 function makeHeadliner () {
