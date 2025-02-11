@@ -110,7 +110,7 @@ body {
     background-color: var(--platinum);
     display: grid;
     /* grid-template-rows: 70px 50px 1fr 30px; */
-    grid-template-rows: 100px 50px minmax(calc(100vh - 150px), 1fr) 30px;
+    grid-template-rows: 100px 50px minmax(calc(100vh - 210px), 1fr) 50px;
     /* note: minmax can only be used with grid --> used the calc fn to set min value to viewport size - title/header/footer and max value to 1fr*/
     /* height: 100vh; <-- this was causing the bg image to be cut off, as the body height was only the size of the viewport*/
     position: relative;
@@ -251,8 +251,9 @@ img {
 
 .about div:nth-child(4) {
     /* Contact Info div */
-    margin-top: 50px;
+    margin-top: 40px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .about div:nth-child(4) h2 {
@@ -350,4 +351,18 @@ img {
     color: var(--softened-black);
     border: 2px solid var(--raw-umber);
     /* margin-top: 30px; */
+}
+
+.icon {
+    height: 30px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon > a > .svg{
+    height: 40px;
+    width: 40px;
+    /* pointer-events: none; */
 }
