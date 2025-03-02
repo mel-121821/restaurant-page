@@ -10,7 +10,7 @@ import bannerImg from "../img/barista.jpg"
 function makeHeadliner () {
     const headliner = document.createElement("div");
     const orgIntro = document.createElement("h2")
-    orgIntro.textContent = "Insert Slogan Here"
+    orgIntro.textContent = "Our Pâtissiers"
     headliner.appendChild(orgIntro);
     headliner.classList.add("headliner")
     return headliner
@@ -44,7 +44,7 @@ function makeContact () {
     const p1 = document.createElement("p");
     p1.textContent = "Want to place an order? Email us at:"
     const email = document.createElement("p");
-    email.textContent = "info@mybakery.ca" 
+    email.textContent = "info@lapetiteboulangerie.ca" 
     const p2 = document.createElement("p");
     p2.textContent = "Or give us a call:"
     const phone = document.createElement("p");
