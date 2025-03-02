@@ -81,6 +81,7 @@ table {
 --french-gray: hsla(225, 3%, 73%, 1);
 --french-gray-translucent: hsla(225, 3%, 73%, 0.4);
 --tigers-eye: hsla(28, 70%, 42%, 1);
+--translucent-white: rgb(255, 255, 255, 0.8);
 }
 
 * {
@@ -96,31 +97,37 @@ table {
     src:url('../font/dancing-script/DancingScript-Regular.otf');
     font-weight: normal;
     font-style: normal;
-    font-size: 16px;
+}
+
+@font-face {
+    font-family: alex-brush;
+    src:url('../font/alex-brush/AlexBrush-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 html {
     font-size: 16px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
+
 
 /* _______________Main_______________ */
 
 body {
     background-color: var(--platinum);
     display: grid;
-    /* grid-template-rows: 70px 50px 1fr 30px; */
-    grid-template-rows: 100px 50px minmax(calc(100vh - 210px), 1fr) 50px;
+    grid-template-rows: 140px 40px minmax(calc(100vh - 240px), 1fr) 60px;
+    /* grid legend --> title | nav (buttons) | content | footer */
+    position: relative;
     /* note: minmax can only be used with grid --> used the calc fn to set min value to viewport size - title/header/footer and max value to 1fr*/
     /* height: 100vh; <-- this was causing the bg image to be cut off, as the body height was only the size of the viewport*/
-    position: relative;
 }
 
 body::before {
     content: "";
     background-image: url('../img/bg.jpg');
     background-size: 100vw auto;
-    
     background-repeat: repeat-y;
     position: absolute;
     top: 0px;
@@ -137,21 +144,30 @@ button,
     position: relative;
 }
 
+h1, h2, h3,
+button, .footer {
+    font-family: "alex-brush";
+}
+
+
 /* _______________Title_______________ */
 
 .title {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'dancing-script';
+    padding-top: 20px;
 }
 
 h1 {
-    font-size: 4rem;
-    font-weight: 700;
-}
+    font-size: 4.5rem;
+    font-weight: 600;
+    /* font-family: 'alex-brush'; */
+    white-space: nowrap;
+} 
 
-/* _______________Header_______________ */
+
+/* _______________Main Header (Nav)_______________ */
 
 header {
     display: flex;
@@ -160,18 +176,29 @@ header {
 }
 
 button {
-    padding: 5px 30px;
+    padding: 2px 35px;
     border-radius: 8px;
-    margin: 0px 5px;
-    border: 2px solid var(--raw-umber);
-    background: var(--pale-dogwood);
+    margin: 0px 15px;
+    border: 1px solid var(--french-gray);
+    background: var(--translucent-white);
     color: var(--softened-black);
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     font-weight: 700;
-    box-shadow: 2px 2px 6px var(--battleship-gray);
+    cursor: pointer;
+    font-family: "dancing-script";
+    box-shadow: 2px 2px 6px 1px var(--battleship-gray);
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
 }
 
-/* _______________Content (General)_______________ */
+button:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+
+/* _______________Content (General/Home)_______________ */
 
 #content {
     display: flex;
@@ -184,6 +211,9 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 20px;
 }
 
 .banner,
@@ -235,7 +265,7 @@ img {
     align-self: center;
     padding: 20px;
     border-radius: 5px;
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: var(--translucent-white);
     box-shadow: 2px 2px 6px var(--battleship-gray);
     margin-bottom: 30px;
 }
@@ -244,8 +274,9 @@ img {
     align-self: center;
     margin-bottom: 10px;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 2.2rem;
 }
+
 
 /* _______________Content (About)_______________ */
 
@@ -278,14 +309,42 @@ img {
 
 /* _______________Content (Menu)_______________ */
 
-.menu-item h2 {
+.menu-item .info h2 {
+    margin-top: 10px;
     margin-bottom: 0px;
+    font-size: 2.5rem; 
 }
 
 .menu-item img {
     width: 550px;
     height: 430px;
     margin-top: 30px;  
+}
+
+.menu-item div:nth-child(13) > h2 {
+     /* catering info div */
+    margin-bottom: 8px;
+}
+
+.menu-item div:nth-child(13) > div {
+    /* catering info div */
+    /* set span and para to inline  */
+    display: inline;
+    text-align: center;
+}
+
+.menu-item span,
+.menu-item div:nth-child(13) > div > p {
+    /* set span and para to inline  */
+    display: inline;
+}
+
+.menu-item span {
+    font-style: italic;
+}
+
+.menu-item div:nth-child(13) > p:nth-child(2n + 1) {
+    font-weight: 700;
 }
 
 /* _______________Menu Image Positioning_______________ */
@@ -320,7 +379,7 @@ img {
 
 .menu-item h3 {
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .menu-item p {
@@ -343,26 +402,31 @@ img {
 
 .footer {
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--pale-dogwood);
+    border-top: 1px solid var(--french-gray);
+    background: var(--translucent-white);
     color: var(--softened-black);
-    border: 2px solid var(--raw-umber);
-    /* margin-top: 30px; */
+}
+
+.footer-text,
+.icon {
+    margin-top: 10px;
 }
 
 .icon {
-    height: 30px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 5px
 }
 
 .footer-icon > a > .svg{
     height: 40px;
-    width: 40px;
+    width: auto;
     /* pointer-events: none; */
 }
