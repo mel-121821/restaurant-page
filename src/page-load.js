@@ -24,7 +24,7 @@ import bannerImg from "../img/bread-basket.jpg"
 function makeHeadliner () {
     const headliner = document.createElement("div");
     const slogan = document.createElement("h2")
-    slogan.textContent = "Insert slogan here"
+    slogan.textContent = "Freshly baked, every day."
     headliner.appendChild(slogan);
     headliner.classList.add("headliner")
     return headliner
