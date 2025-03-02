@@ -13,12 +13,12 @@ Remember, you only need to install and configure the things you need for your pr
 
 [x] Inside div#content, create a homepage for your restaurant. You might want to include an image, headline, and some text about how wonderful the restaurant is; you do not have to make this look too fancy. It’s okay to hard-code these into the HTML for now just to see how they look on the page.
 
-[] Now remove everything inside div#content from the HTML (so you still have the header and nav with an empty div id="content" below it) and instead create them by using JavaScript only, e.g. by appending each new element to div#content once the page is first loaded. Since we’re all set up to write our code in multiple files, let’s write this initial page-load function inside of its own module and then import and call it inside of index.js.
+[x] Now remove everything inside div#content from the HTML (so you still have the header and nav with an empty div id="content" below it) and instead create them by using JavaScript only, e.g. by appending each new element to div#content once the page is first loaded. Since we’re all set up to write our code in multiple files, let’s write this initial page-load function inside of its own module and then import and call it inside of index.js.
 
-[] Next, set up your restaurant site to use tabbed browsing to access the Menu and Contact pages. Look at the behavior of this student’s live preview site for visual inspiration.
+[x] Next, set up your restaurant site to use tabbed browsing to access the Menu and Contact pages. Look at the behavior of this student’s live preview site for visual inspiration.
 Put the contents of each “tab” inside of its own module. Each module will export a function that creates a div element, adds the appropriate content and styles to that element and then appends it to the DOM.
 
-[] Write the tab-switching logic inside of index.js. You should have event listeners for each button in the header navbar that wipes out the current contents of div#content and then runs the correct ‘tab module’ to populate it with the new contents again.
+[x] Write the tab-switching logic inside of index.js. You should have event listeners for each button in the header navbar that wipes out the current contents of div#content and then runs the correct ‘tab module’ to populate it with the new contents again.
 
 Deployment Instructions
 
@@ -92,10 +92,6 @@ Name: sandwich.jpg
 Creator: Álvaro Bernal
 Url: https://unsplash.com/photos/bread-on-brown-round-plate-7I7h0T48eLQ
 
-Name: sandwich2.jpg
-Creator: Deepthi Clicks on Unsplash
-Url: https://unsplash.com/photos/a-sandwich-with-meat-cheese-tomatoes-and-lettuce-xhCpU7ja5EQ
-
 
 
 Menu Images: Cakes
@@ -107,10 +103,6 @@ URl: https://www.pexels.com/photo/sliced-carrot-cake-on-a-white-plate-5594495/
 
 
 Menu Images: Catering
-
-Name: cupcake.jpg
-Creator: Blandine JOANNIC from Pixabay
-Url: https://pixabay.com/photos/cupcakes-chocolate-muffin-food-5116009/
 
 Name: mini-sandwiches
 Creator: Photo by Jem Sahagun on Unsplash
@@ -156,3 +148,6 @@ https://dev.to/dcodeyt/append-multiple-elements-using-append-302h#:~:text=on%20P
 
 Useful Accessibility tip for high-contrast users:
 https://stackoverflow.com/questions/52589391/css-box-shadow-vs-outline
+
+Preventing text wrap with white-space:nowrap
+https://developer.mozilla.org/en-US/docs/Web/CSS/white-space
