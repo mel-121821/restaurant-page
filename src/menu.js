@@ -16,7 +16,7 @@ import catering from "../img/mini-sandwiches.jpg"
 function makeHeadliner () {
     const headliner = document.createElement("div");
     const orgIntro = document.createElement("h2")
-    orgIntro.textContent = "Insert Slogan Here"
+    orgIntro.textContent = "Our Menu Items"
     headliner.appendChild(orgIntro);
     headliner.classList.add("headliner")
     return headliner
@@ -283,17 +283,21 @@ function cateringInfo () {
     const contact = document.createElement("div")
     const contactHeading = document.createElement("h2");
     contactHeading.textContent = "Planning an Event?"
+    const infoTextDiv = document.createElement("div");
+    const span = document.createElement("span")
+    span.textContent = "La Petite Boulangerie "
     const p1 = document.createElement("p");
-    p1.textContent = "MyBakery provides catering services for weddings, social gatherings and corporate events. To submit an order, email us at:"
+    p1.textContent = "provides catering services for weddings, social gatherings and corporate events. To submit an order, email us at:"
     const email = document.createElement("p");
-    email.textContent = "info@mybakery.ca" 
+    email.textContent = "info@lapetiteboulangerie.ca" 
     const p2 = document.createElement("p");
     p2.textContent = "Or give us a call:"
     const phone = document.createElement("p");
     phone.textContent = "(888)-123-456" 
 
+    infoTextDiv.append(span, p1)
     contact.appendChild(contactHeading);
-    contact.append(p1, email, p2, phone);
+    contact.append(infoTextDiv, email, p2, phone);
     contact.classList.add("info");
     return contact
 }
