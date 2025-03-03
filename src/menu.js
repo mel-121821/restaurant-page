@@ -5,10 +5,10 @@
 // Ctrl click url to view updated project
 // http://localhost:8080/
 
-import pastries from "../img/donuts4.jpg"
+import pastries from "../img/donuts3.jpg"
 import hotDrinks from "../img/coffee.jpg"
 import coldDrinks from "../img/smoothie.jpg"
-import sandwich from "../img/sandwich.jpg"
+import sandwich from "../img/sandwich3.jpg"
 import desserts from "../img/cake2.jpg"
 import catering from "../img/mini-sandwiches.jpg"
 
