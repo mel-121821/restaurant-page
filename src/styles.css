@@ -59,7 +59,7 @@ table {
 	border-spacing: 0;
 }
 
-/*__________________________________________*/
+/*_______________Colour Scheme___________________________*/
 
 
 :root {
@@ -83,6 +83,9 @@ table {
 --tigers-eye: hsla(28, 70%, 42%, 1);
 --translucent-white: rgb(255, 255, 255, 0.8);
 }
+
+
+/*_______________Root Styles________________________*/
 
 * {
     margin: 0;
@@ -307,67 +310,13 @@ img {
     font-weight: 600;
 }
 
-/* _______________Content (Menu)_______________ */
+
+/* _______________Content (Menu - Text and Layout)_______________ */
 
 .menu-item .info h2 {
     margin-top: 10px;
     margin-bottom: 0px;
     font-size: 2.5rem; 
-}
-
-.menu-item img {
-    width: 550px;
-    height: 430px;
-    margin-top: 30px;  
-}
-
-.menu-item div:nth-child(13) > h2 {
-     /* catering info div */
-    margin-bottom: 8px;
-}
-
-.menu-item div:nth-child(13) > div {
-    /* catering info div */
-    /* set span and para to inline  */
-    display: inline;
-    text-align: center;
-}
-
-.menu-item span,
-.menu-item div:nth-child(13) > div > p {
-    /* set span and para to inline  */
-    display: inline;
-}
-
-.menu-item span {
-    font-style: italic;
-}
-
-.menu-item div:nth-child(13) > p:nth-child(2n + 1) {
-    font-weight: 700;
-}
-
-/* _______________Menu Image Positioning_______________ */
-
-.menu-item div:nth-child(4) > img,
-.menu-item div:nth-child(6) > img  {
-    /* hot drinks and cold drinks images*/
-    object-position: 70% 0%;
-}
-
-.menu-item div:nth-child(8) > img {
-    /* sandwich img */
-    object-position: 50% 70%;
-}
-
-.menu-item div:nth-child(10) > img {
-    /* desserts image */
-    object-position: 60% 0%;
-}
-
-.menu-item > div:nth-child(12) > img {
-    /* catering img */
-    object-position: 100% 0%;
 }
 
 .menu-item h3,
@@ -396,6 +345,69 @@ img {
 
 .menu-item h3 {
     margin-top: 20px;
+}
+
+
+/* ____________Content (Menu - Image Style and Positioning)____________ */
+
+.menu-item img {
+    width: 550px;
+    height: 430px;
+    margin-top: 30px;  
+}
+
+.menu-item div:nth-child(2) > img {
+    object-position: 0% 45%;
+}
+
+.menu-item div:nth-child(4) > img,
+.menu-item div:nth-child(6) > img  {
+    /* hot drinks and cold drinks images*/
+    object-position: 70% 0%;
+}
+
+.menu-item div:nth-child(8) > img {
+    /* sandwich img */
+    object-position: 0% 0%;
+}
+
+.menu-item div:nth-child(10) > img {
+    /* desserts image */
+    object-position: 60% 0%;
+}
+
+.menu-item > div:nth-child(12) > img {
+    /* catering img */
+    object-position: 100% 0%;
+}
+
+
+/* _______________Content (Menu - Catering Div)_______________ */
+
+.menu-item div:nth-child(13) > h2 {
+    /* catering info div */
+   margin-bottom: 8px;
+}
+
+.menu-item div:nth-child(13) > div {
+   /* catering info div */
+   /* set span and para to inline  */
+   display: inline;
+   text-align: center;
+}
+
+.menu-item span,
+.menu-item div:nth-child(13) > div > p {
+   /* set span and para to inline  */
+   display: inline;
+}
+
+.menu-item span {
+   font-style: italic;
+}
+
+.menu-item div:nth-child(13) > p:nth-child(2n + 1) {
+   font-weight: 700;
 }
 
 /* _______________Footer_______________ */
