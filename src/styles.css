@@ -182,7 +182,7 @@ button {
     padding: 2px 35px;
     border-radius: 8px;
     margin: 0px 15px;
-    border: 1px solid var(--french-gray);
+    border: 0px solid var(--french-gray);
     background: var(--translucent-white);
     color: var(--softened-black);
     font-size: 1.6rem;
@@ -198,6 +198,15 @@ button:hover {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition: 0.2s ease;
+}
+
+button:focus {
+outline: 2px solid var(--battleship-gray);
+}
+
+a:focus {
+    outline: 1px solid var(--battleship-gray);
+    border-radius: 1px;
 }
 
 
@@ -227,7 +236,7 @@ button:hover {
     justify-content: center;
 }
 
-img {
+#content img {
     object-fit: cover;
     margin-bottom: 40px;  
 
@@ -420,11 +429,12 @@ img {
     align-items: center;
     border-top: 1px solid var(--french-gray);
     background: var(--translucent-white);
+    /* background: grey; */
+    /* testing svg */
     color: var(--softened-black);
 }
 
-.footer-text,
-.icon {
+.footer-text {
     margin-top: 10px;
 }
 
@@ -434,7 +444,12 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 5px
+    margin-left: 8px
+}
+
+.footer-icon > a {
+    height: 40px;
+    width: 40px;
 }
 
 .footer-icon > a > .svg{
@@ -442,3 +457,13 @@ img {
     width: auto;
     /* pointer-events: none; */
 }
+
+.svg:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+
+
