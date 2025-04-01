@@ -1,25 +1,11 @@
 //______Page Load Module__________
 
-// ___pseudo code_____ 
-// 1. Create a function that builds each element, assigns it content and a class, and returns it 
-//   1a. One for headline
-//   1b. One for banner image (need to add js image functionality to config file)
-//   1c. One for intro text 
-// 2. Create a function to append new elements to the content div
-// 3. Export to index.js  
-
-
 // use the following command in terminal to update project page:
 // npx webpack serve (Ctrl + C to turn off)
 // Ctrl click url to view updated project
 // http://localhost:8080/
 
 import bannerImg from "../img/bread-basket.jpg"
-
-// ok to separate functions here as there are no variables that need to be made private - no need for inner functions/lexical scope
-
-// also each module can select the content div individually, no need to create a variable and try to pass it between modules. That creates additional complication 
-
 
 function makeHeadliner () {
     const headliner = document.createElement("div");
@@ -57,12 +43,6 @@ function pageLoad () {
     content.appendChild(makeBanner());
     content.appendChild(makeInfo());
 }
-
-    // makeHeadliner();
-    // makeBanner();
-    // makeInfo();
-
-
 
 export {pageLoad}
 
