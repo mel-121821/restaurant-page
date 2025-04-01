@@ -1,9 +1,5 @@
 /* ______CSS source file_______ */
 
-/* To do: make elements responsive */
-/* Keep styles in css instead of moving them to js (cleaner) */
-
-
 /*CSS Meyer Reset*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -63,25 +59,13 @@ table {
 
 
 :root {
-/* Color pallet pulled from banner image */
-/* CSS HSL */
---barn-red: hsla(12, 70%, 25%, 1);
---flame: hsla(17, 61%, 52%, 1);
---maya-blue: hsla(202, 90%, 69%, 1);
---bright-pink-crayola: hsla(345, 86%, 65%, 1);
---champagne-pink: hsla(24, 90%, 92%, 1);
 --softened-black: rgba(0, 0, 0, 0.898);
+--translucent-white: rgb(255, 255, 255, 0.8);
 
 /* Color pallet pulled from bg img */
---raw-umber: hsla(25, 45%, 42%, 1);
---kobicha: hsla(22, 51%, 25%, 1);
 --platinum: hsla(210, 9%, 87%, 1);
---pale-dogwood: hsla(18, 31%, 75%, 1);
 --battleship-gray: hsla(0, 0%, 58%, 1);
 --french-gray: hsla(225, 3%, 73%, 1);
---french-gray-translucent: hsla(225, 3%, 73%, 0.4);
---tigers-eye: hsla(28, 70%, 42%, 1);
---translucent-white: rgb(255, 255, 255, 0.8);
 }
 
 
@@ -111,7 +95,6 @@ table {
 
 html {
     font-size: 16px;
-    /* font-family: sans-serif; */
 }
 
 
@@ -123,8 +106,6 @@ body {
     grid-template-rows: 140px 40px minmax(calc(100vh - 240px), 1fr) 60px;
     /* grid legend --> title | nav (buttons) | content | footer */
     position: relative;
-    /* note: minmax can only be used with grid --> used the calc fn to set min value to viewport size - title/header/footer and max value to 1fr*/
-    /* height: 100vh; <-- this was causing the bg image to be cut off, as the body height was only the size of the viewport*/
 }
 
 body::before {
@@ -165,7 +146,6 @@ button, .footer {
 h1 {
     font-size: 4.5rem;
     font-weight: 600;
-    /* font-family: 'alex-brush'; */
     white-space: nowrap;
 } 
 
@@ -239,27 +219,9 @@ a:focus {
 #content img {
     object-fit: cover;
     margin-bottom: 40px;  
-
-     /* Rounded style */
     border-radius: 50%; 
-
-    /* Square img style */
-    /* border-radius: 0; */
-
-    /* Border img style */
     border: 30px solid rgb(255, 255, 255, 0.8); 
-    /* border-radius: 10px; */
     box-shadow: 2px 2px 6px var(--battleship-gray);
-
-    /* Outline img style */
-    /* outline: 30px solid rgb(255, 255, 255, 0.8);
-    border: 1px solid var(--platinum);
-    box-shadow: 10px 10px 12px 10px var(--battleship-gray); */
-    
-    /* offset-x | offset-y | blur-radius | spread-radius | color */
-    
-    /* current info div box-shadow: 
-    box-shadow: 2px 2px 6px var(--battleship-gray); */
 }
 
 .banner img {
@@ -330,8 +292,6 @@ a:focus {
 
 .menu-item h3,
 .menu-item p {
-    /* align-self: center; 
-    text-align works better here, otherwise overflow text will be aligned to the left side of div*/
     text-align: center;
 }
 
@@ -429,33 +389,25 @@ a:focus {
     align-items: center;
     border-top: 1px solid var(--french-gray);
     background: var(--translucent-white);
-    /* background: grey; */
-    /* testing svg */
     color: var(--softened-black);
 }
 
 .footer-text {
-    margin-top: 10px;
+    margin-top: 16px;
 }
 
-.icon {
-    height: 40px;
-    width: 40px;
+/* .footer-icon {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-left: 8px
-}
+} */
 
 .footer-icon > a {
-    height: 40px;
-    width: 40px;
+    display: flex;
+    margin-left: 8px;
 }
 
 .footer-icon > a > .svg{
     height: 40px;
-    width: auto;
-    /* pointer-events: none; */
 }
 
 .svg:hover {
